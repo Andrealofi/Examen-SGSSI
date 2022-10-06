@@ -17,7 +17,7 @@ textoDescifrado = texto
 letrasOrdPorFreq = ['e','a','o','l','s','n','d','r','u','i','t','c','p','m','y','q','b','h','g','f','V','j','ñ','z','x','k','w']
 cont=0
 
-#en la lista de las letras ordenadas por las frecuencias en castellano la V es mayúscula porque en el texto hay una v minúscula que YA ESTÁ DESCIFRADA
+#en la lista de las letras ordenadas por las frecuencias en castellano hay que ver si estan algunas descifradas o no.
 
 for par in lista_ord:
 	#print(par[0])
@@ -26,13 +26,11 @@ for par in lista_ord:
 	
 print(textoDescifrado)
 print(" ")
-#Ahora vamos viendo el texto descifrado y vamos cambiando letras y probando
-#NO ES UN VOID, HAY QUE ASIGNARLO A textoDescifrado
 #hay letras que ya estarán bien puestas según el análisis de frecuencias (no hay que reemplazar todas)
 #NO HAY QUE CAMBIAR NADA POR v PORQUE ESA YA ESTA PUESTA
-textoDescifrado=textoDescifrado.replace('d','l'.upper()); #luego tendré que poner d
+textoDescifrado=textoDescifrado.replace('d','l'.upper()); 
 textoDescifrado=textoDescifrado.replace('o','r'.upper());
-textoDescifrado=textoDescifrado.replace('r','d'.upper()); #pongo la d, que antes la he quitado
+textoDescifrado=textoDescifrado.replace('r','d'.upper()); 
 textoDescifrado=textoDescifrado.replace('p','m'.upper());
 textoDescifrado=textoDescifrado.replace('l','o'.upper());
 textoDescifrado=textoDescifrado.replace('h','j'.upper());
